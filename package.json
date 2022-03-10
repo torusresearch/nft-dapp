@@ -1,0 +1,30 @@
+{
+  "name": "nft-dapp",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^16",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.9.0",
+    "husky": "^7.0.4",
+    "lerna": "^4.0.0",
+    "lint-staged": "^12.3.4",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.5"
+  },
+  "lint-staged": {
+    "*": "lerna run --concurrency 1 --stream --since HEAD --exclude-dependents pre-commit -- "
+  },
+  "engines": {
+    "node": ">=14.17.0",
+    "npm": ">=6.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
